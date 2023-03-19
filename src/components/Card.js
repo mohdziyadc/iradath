@@ -7,7 +7,7 @@ import {
 
 export default function Card({ icon, title, desc }) {
   return (
-    <div className="bg-white flex flex-col  hover:bg-[#72E485] p-6 rounded-lg ">
+    <div className="bg-white flex flex-col  hover:bg-[#72E485] text-[#808080] hover:text-black   p-6 rounded-lg ">
       <div>
         {icon == 1 ? (
           <BriefcaseIcon width={50} height={50} color="#12164d" />
@@ -19,12 +19,10 @@ export default function Card({ icon, title, desc }) {
           <ChartPieIcon width={50} height={50} color="#12164d" />
         ) : null}
       </div>
-      <div className="text-[#12164d] font-roboto md:text-xl text-lg  mt-[20%] mb-2 font-semibold">
+      <div className="text-[#12164d] font-roboto text-xl   mt-[20%] mb-2 font-semibold">
         {title}
       </div>
-      <div className="text-[#808080] font-roboto md:text-base text-sm font-light">
-        {desc}
-      </div>
+      <div className="  font-roboto text-base  font-light">{desc}</div>
     </div>
   );
 }

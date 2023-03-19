@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Investment from "@/components/Investment";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function Home() {
   const yellowOrange = "#F9D658";
   const white = "#FFFFFF";
   const lightGrey = "#EEEDF0";
+  const textColorPrimary = "#12164d";
   return (
     <>
       <Head>
@@ -30,6 +32,9 @@ export default function Home() {
       </div>
       <div className="w-full h-screen bg-[#e7e7e7]">
         <About />
+      </div>
+      <div className="w-full h-screen bg-white">
+        <Investment />
       </div>
     </>
   );
