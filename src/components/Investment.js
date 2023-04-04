@@ -35,7 +35,7 @@ export default function Investment() {
           <div className="md:text-3xl flex-col text-2xl flex-1 flex justify-center items-center font-semibold font-roboto text-[#12164d]">
             ETHICAL INVESTMENTS 😇
             <div className="text-[#808080] md:text-xl text-lg font-roboto font-light md:w-[60%] w-[80%] text-center">
-              We only engage in ethical investments. Check out our philosphies.
+              We only engage in ethical investments. Check out our principles.
             </div>
           </div>
           <div className="flex-[2] py-5 px-2 drop-shadow-md">
@@ -59,12 +59,10 @@ export default function Investment() {
                 </div>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  <div className="md:text-lg">
-                    We do not deal in certain prohibited industries. This
-                    philosophy is based on the Shariah requirements.
-                  </div>
-                </Typography>
+                <div className="md:text-lg font-roboto">
+                  We do not deal in certain prohibited industries. This
+                  philosophy is based on the Shariah requirements.
+                </div>
               </AccordionDetails>
             </Accordion>
             <Accordion
@@ -87,12 +85,10 @@ export default function Investment() {
                 </div>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  <div className="md:text-lg">
-                    The first and foremost amongst the industries in which we do
-                    not deal is 'interest-based investments'.
-                  </div>
-                </Typography>
+                <div className="md:text-lg font-roboto">
+                  The first and foremost amongst the industries in which we do
+                  not deal is 'interest-based investments'.
+                </div>
               </AccordionDetails>
             </Accordion>
             <Accordion
@@ -115,13 +111,11 @@ export default function Investment() {
                 </div>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  <div className="md:text-lg">
-                    Investments in liquor companies are a strict no at Iradath
-                    Investments. Ethically speaking, alcohol has been a scourge
-                    of human society since time immemorial.
-                  </div>
-                </Typography>
+                <div className="md:text-lg font-roboto">
+                  Investments in liquor companies are a strict no at Iradath
+                  Investments. Ethically speaking, alcohol has been a scourge of
+                  human society since time immemorial.
+                </div>
               </AccordionDetails>
             </Accordion>
             <Accordion
@@ -144,12 +138,10 @@ export default function Investment() {
                 </div>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  <div className="md:text-lg">
-                    We do not deal with companies who are involved in the
-                    tobacco business.
-                  </div>
-                </Typography>
+                <div className="md:text-lg font-roboto">
+                  We do not deal with companies who are involved in the tobacco
+                  business.
+                </div>
               </AccordionDetails>
             </Accordion>
           </div>

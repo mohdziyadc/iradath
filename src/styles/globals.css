@@ -5,3 +5,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap");
+
+button.rec {
+  background-color: "#808080";
+  box-shadow: 0 0 1px 3px white;
+}
+button.rec.rec-arrow:focus {
+  background-color: "#fffff";
+  box-shadow: 0 0 1px 3px white;
+}
+
+button.rec-dot:hover,
+button.rec-dot:active,
+button.rec-dot:focus {
+  box-shadow: 0 0 1px 3px rgba(235, 16, 16, 0.5);
+}

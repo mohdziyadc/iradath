@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Investment from "@/components/Investment";
+import Course from "@/components/Course";
+import Testimonial from "@/components/Testimonial";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +29,6 @@ export default function Home() {
       </Head>
 
       <div className=" bg-[#101010] w-full h-screen">
-        <Navbar />
         <Hero />
       </div>
       <div className="w-full h-screen bg-[#e7e7e7]">
@@ -35,6 +36,12 @@ export default function Home() {
       </div>
       <div className="w-full h-screen bg-white">
         <Investment />
+      </div>
+      <div className="w-full h-screen bg-[#e7e7e7]">
+        <Course />
+      </div>
+      <div className="w-full h-screen bg-white">
+        <Testimonial />
       </div>
     </>
   );

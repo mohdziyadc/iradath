@@ -7,16 +7,16 @@ export default function Navbar() {
   const handleMenuClick = () => setToggleMenu(!toggleMenu);
   return (
     <>
-      <div className="text-white z-10 w-screen absolute">
+      <nav className="text-white bg-[#101010] z-10 absolute w-screen ">
         <div className="flex flex-row justify-between py-3 px-6">
           <div className="flex font-roboto font-semibold py-2 md:text-2xl text-3xl">
             IRADATH
           </div>
           <div className=" hidden text-slate-300 py-2 lg:flex lg:text-lg ">
-            <Link href="#" className="px-4">
+            <Link href="/" className="px-4">
               Home
             </Link>
-            <Link href="#" className="px-4">
+            <Link href="/about" className="px-4">
               About Us
             </Link>
             <Link href="#" className="px-4">
@@ -51,10 +51,10 @@ export default function Navbar() {
         </div>
         {toggleMenu && (
           <div className="flex  bg-[#404040] flex-col text-lg w-full items-center lg:hidden">
-            <Link href="#" className="py-3">
+            <Link href="/" className="py-3">
               Home
             </Link>
-            <Link href="#" className="py-3">
+            <Link href="/about" className="py-3">
               About Us
             </Link>
             <Link href="#" className="py-3">
@@ -78,7 +78,7 @@ export default function Navbar() {
             </div>
           </div>
         )}
-      </div>
+      </nav>
     </>
   );
 }
