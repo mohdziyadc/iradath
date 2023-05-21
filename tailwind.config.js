@@ -15,5 +15,5 @@ module.exports = {
       jetBrains: ["JetBrains Mono", "monospace"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

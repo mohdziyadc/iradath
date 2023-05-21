@@ -6,17 +6,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap");
 
-button.rec {
-  background-color: "#808080";
-  box-shadow: 0 0 1px 3px white;
-}
-button.rec.rec-arrow:focus {
-  background-color: "#fffff";
+button.rec.rec-arrow {
+  background-color: white;
   box-shadow: 0 0 1px 3px white;
 }
 
-button.rec-dot:hover,
-button.rec-dot:active,
-button.rec-dot:focus {
-  box-shadow: 0 0 1px 3px rgba(235, 16, 16, 0.5);
+button.rec.rec-arrow:hover {
+  background-color: white;
+  color: black;
+}
+button.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+button.rec-dot_active {
+  background-color: #72e485;
+  box-shadow: 0 0 1px 3px #72e485;
+}
+button.rec-dot:focus,
+button.rec-dot:hover {
+  box-shadow: 0 0 1px 3px #72e485;
+}
+button.rec-dot_active:focus,
+button.rec-dot_active:hover {
+  background-color: #72e485;
+  box-shadow: 0 0 1px 3px #72e485;
 }

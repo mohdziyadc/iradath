@@ -10,6 +10,33 @@ export default function Testimonial() {
     { width: 768, itemsToShow: 2 },
     { width: 1200, itemsToShow: 2 },
   ];
+
+  const testimonials = [
+    {
+      title: "Iradath Investments has been a great experience",
+      desc: "Iradath Investments has been a great experience: courteous staff, precise and correct advice, and ever willing to support in allassociated aspects.",
+      avatar:
+        "https://media.istockphoto.com/id/470685204/photo/arab-businessman-portrait-outside-office-building.jpg?s=612x612&w=0&k=20&c=-DIAeIqKFg8_aADaHXVwRPh8e1SNBZ3wR3Z5fwau9kM=",
+      name: "Dr. Abdul Salam Omar",
+      desig: "Founder & Managing Director",
+    },
+    {
+      title: "Iradath Investments is a good platform",
+      desc: "Iradath Investments is a good platform to make investment for financial matters as it guides us at every step in attaining our financial goals. They make full efforts in terms of client satisfaction.",
+      avatar:
+        "https://images.squarespace-cdn.com/content/v1/56799419df40f3a52654773e/1517445224026-ZFZFOPXYPZRT6EEXKWVP/public+speaker+social+profile+photo+executive+photos+nyc.JPG",
+      name: "Noushad Yousef",
+      desig: "Sector Head, Mobily",
+    },
+    {
+      title: "Great platform for financial planning.",
+      desc: "Iradath Investments gives you a good platform for financial planning. They help us in achieving our financial goals from education toretirement. They provide full & continuous support to their investors till their financial goal are achieved.",
+      avatar:
+        "https://image1.masterfile.com/getImage/NjkzLTA2MDE5NjIxZW4uMDAwMDAwMDA=AGjF27/693-06019621en_Masterfile.jpg",
+      name: "Sheikh Salim",
+      desig: "Executive Director, Techproxima",
+    },
+  ];
   return (
     <>
       <div className="flex flex-col justify-center items-center h-full w-screen">
@@ -31,12 +58,17 @@ export default function Testimonial() {
           <div className="flex-[0.2] flex justify-center items-center text-[#12164d] md:text-4xl text-2xl  font-semibold">
             Our Customers Says
           </div>
-          <div className="flex-1 flex justify-center items-center w-screen">
+          <div className="flex-1 flex justify-center items-center h-full w-full">
             <Carousel breakPoints={breakPoints}>
-              <TestimonialCard />
-              <TestimonialCard />
-              <TestimonialCard />
-              <TestimonialCard />
+              {testimonials.map((testimonial) => (
+                <TestimonialCard
+                  title={testimonial.title}
+                  description={testimonial.desc}
+                  avatar={testimonial.avatar}
+                  name={testimonial.name}
+                  designation={testimonial.desig}
+                />
+              ))}
             </Carousel>
           </div>
         </div>
