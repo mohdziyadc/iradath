@@ -58,7 +58,7 @@ export default function Testimonial() {
           <div className="flex-[0.2] flex justify-center items-center text-[#12164d] md:text-4xl text-2xl  font-semibold">
             Our Customers Says
           </div>
-          <div className="flex-1 flex justify-center items-center h-full w-full">
+          <div className="flex-1 flex justify-center items-center h-full w-full mb-2">
             <Carousel breakPoints={breakPoints}>
               {testimonials.map((testimonial) => (
                 <TestimonialCard

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import Image from "next/image";
+import logo from "../../public/iradath_logo.png";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -9,8 +11,11 @@ export default function Navbar() {
     <>
       <nav className="text-white bg-[#101010] z-10 absolute w-screen ">
         <div className="flex flex-row justify-between py-3 px-6">
-          <div className="flex font-roboto font-semibold py-2 md:text-2xl text-3xl">
-            IRADATH
+          <div className="flex font-roboto font-semibold  md:text-2xl items-center justify-center text-3xl  ">
+            <div className="px-2">
+              <Image src={logo} height={40} width={40}></Image>
+            </div>
+            <div>IRADATH</div>
           </div>
           <div className=" hidden text-slate-300 py-2 lg:flex lg:text-lg ">
             <Link href="/" className="px-4">

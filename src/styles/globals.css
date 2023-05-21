@@ -23,9 +23,6 @@ button.rec-dot_active {
   box-shadow: 0 0 1px 3px #72e485;
 }
 button.rec-dot:focus,
-button.rec-dot:hover {
-  box-shadow: 0 0 1px 3px #72e485;
-}
 button.rec-dot_active:focus,
 button.rec-dot_active:hover {
   background-color: #72e485;

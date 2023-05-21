@@ -8,6 +8,7 @@ import About from "@/components/About";
 import Investment from "@/components/Investment";
 import Course from "@/components/Course";
 import Testimonial from "@/components/Testimonial";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +43,9 @@ export default function Home() {
       </div>
       <div className="w-full h-screen bg-white">
         <Testimonial />
+      </div>
+      <div className="w-full bg-black relative">
+        <Footer />
       </div>
     </>
   );
